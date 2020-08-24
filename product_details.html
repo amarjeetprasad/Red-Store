@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore</title>
+   
+   <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+   
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header  section -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menu-id">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px" >
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+
+
+
+
+<!-- products details -->
+<div class="small-container">
+<div class="ro ro-product-details">
+    <div class="colum-2 img-container">
+                <img class="big-img" src="images/gallery-1.jpg" style="padding: 0%;">
+                <img class="small-img" src="images/gallery-1.jpg" style="padding: 5px 0;" onclick="changeBigImage('images/gallery-1.jpg')">
+                <img class="small-img" src="images/gallery-2.jpg" style="padding: 5px 0;" onclick="changeBigImage('images/gallery-2.jpg')">
+                <img class="small-img" src="images/gallery-3.jpg" style="padding: 5px 0;" onclick="changeBigImage('images/gallery-3.jpg')">
+                <img class="small-img" src="images/gallery-4.jpg" style="padding: 5px 0;" onclick="changeBigImage('images/gallery-4.jpg')">
+    </div>
+    <div class="colum-2">
+        <p>Home/T-shirt</p>
+        <h1>Red Printed Tshirt by HRX</h1>
+        <h3>$50.00</h3><br>
+        <select class="select-size">
+            <option>Select Size</option>
+            <option>S(36-38)</option>
+            <option>M(38-40)</option>
+            <option>L(40-42)</option>
+            <option>XL(42-44)</option>
+            <option>XXL(44-46)</option>
+        </select><br>
+        <input type="number" value="1" class="quantity">&nbsp;
+        <a href="" class="button btn">Add To Cart</a>
+        <h4>PORDUCTS DETAILS</h4><br>
+        <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt.
+            Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.
+        </p>
+    </div>
+</div>
+
+
+</div>
+
+
+<!--related  products -->
+
+<div class="small-container">
+
+    <!-- featured products -->
+    <div class="ro ro-2">
+        <h2>Related Products</h2>
+        <p style="cursor: pointer;">view more</p>
+    </div>
+   
+    <div class="ro">
+        <div class="colum-4">
+            <img src="images/product-1.jpg">
+            <h4>Red Printed T-Shert</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="colum-4">
+            <img src="images/product-2.jpg">
+            <h4>New Blacky Shoe</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$40.00</p>
+        </div>
+        <div class="colum-4">
+            <img src="images/product-3.jpg">
+            <h4>Kuchi Lower Track Pants</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$43.00</p>
+        </div>
+        <div class="colum-4">
+            <img src="images/product-4.jpg">
+            <h4>Blue Printed T-Shert</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+</div>
+
+<!-- footer section -->
+
+<div class="footer">
+    <div class="container">
+        <div class="ro">
+
+            <div class="footer-colum-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-colum-2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably
+                     Make the Pleasure and Benefits of Sports
+                      Accessible to thhe Many.
+                </p>
+            </div>
+
+            <div class="footer-colum-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-colum-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/amarjeetkumar.risraj" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Amarjeet Rish</p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var MenuItems=document.getElementById("menu-id");
+    MenuItems.style.maxHeight="0px";
+    function menuToggle()
+    {
+        if(MenuItems.style.maxHeight=="0px")
+        MenuItems.style.maxHeight="200px";
+        else
+        MenuItems.style.maxHeight="0px";
+    }
+
+    // var small_imgs=document.querySelectorAll(".small-img");
+    // for(var i=0;i<small_imgs.length;i++)
+    // {
+    //     small_imgs[i].addEventListener("click",function(){
+    //         document.querySelector(".big-img").setAttribute("src",`images/gallery-${i}.jpg`)
+    //     })
+    // }
+
+function changeBigImage(e){
+ document.querySelector(".big-img").setAttribute("src",e);
+}
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
